@@ -62,8 +62,13 @@ const Sills = () => {
         </div>
         <div className="flex flex-row gap-[40px] justify-center gap-skill">
           <div className="flex flex-col items-center gap-[23px]">
-            <div className="text-center">
-              <h2 className="text-[#FFF] text-[1.528vw] font-[700] font-[Montserrat] h1-skills"></h2>
+            <div className="w-full text-center flex justify-between">
+              <h2 className="text-[#FFF] text-[1.528vw] font-[700] font-[Montserrat] h1-skills ml-[6.25vw] max-md:ml-[9vw]">
+                Soft Skills
+              </h2>
+              <h2 className="text-[#FFF] text-[1.528vw] font-[700] font-[Montserrat] h1-skills mr-[6.25vw] max-md:mr-[10vw]">
+                Hard Skills
+              </h2>
             </div>
             <div className="flex flex-row gap-[23px] w-full">
               <div className="uppercase font-[Orbitron] text-[0.833vw] flex flex-col items-center gap-[2.2vh] items-font-size">
