@@ -1,5 +1,5 @@
 import React from "react";
-import Typed from "react-typed";
+import { Typewriter } from "react-simple-typewriter";
 import emoji from "../assets/image.svg";
 import btn from "../assets/btn.svg";
 import btn1 from "../assets/btn1.svg";
@@ -29,13 +29,17 @@ const Home = () => {
               <div className="w-[44vw] container-size">
                 <h1 className="text-[var(--text)] text-[3.819vw] font-bold font-[Montserrat] h1-text">
                   I do code and guess what?
-                  <Typed
-                    className="pl-[10px] text-gradient"
-                    strings={["I start it!", "I practice It!", "I loved it!"]}
-                    typeSpeed={100}
-                    backSpeed={50}
-                    loop
-                  ></Typed>
+                  <span className="pl-[10px] text-gradient">
+                    <Typewriter
+                      words={["I start it!", "I practice It!", "I loved it!"]}
+                      loop={true}
+                      cursor
+                      cursorStyle="_"
+                      typeSpeed={70}
+                      deleteSpeed={50}
+                      delaySpeed={1000}
+                    />
+                  </span>
                 </h1>
               </div>
               <div className="w-[55.556vw] container-size text-center width">

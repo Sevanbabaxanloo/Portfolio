@@ -45,8 +45,8 @@ const Tools = () => {
               CSS
             </p>
           </div>
-          <div className="flex flex-col items-center gap-[12px] w-[12.083vw] max-md:h-[9vh] ">
-            <div className="h-[63px]">
+          <div className="flex flex-col items-center gap-[12px] w-[12.083vw] max-md:h-[17vw] ">
+            <div className="h-[55px]">
               <img src={tailwind} className="w-[56px]" />
             </div>
             <p className="text-[#C5C5C5] text-[1.5vw] font-[300] font-[Montserrat] tracking-[0.56px] img-flex-text-lg">
