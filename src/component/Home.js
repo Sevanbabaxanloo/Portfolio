@@ -20,7 +20,7 @@ const Home = () => {
       <div className="flex flex-col items-center gap1">
         <div className="bg-gradient-circle flex flex-col items-center justify-center gap-[64px] rounded-full img-size">
           <div className="flex justify-center items-center w-[14.792vw] h-[14.792vw] rounded-full bg-gradient img-size">
-            <img className="min-w-full" src={emoji} />
+            <img className="min-w-full" src={emoji} alt="Emoji" />
           </div>
         </div>
         <div className="relative ">
@@ -54,11 +54,11 @@ const Home = () => {
                     onClick={() => contact("Contact")}
                     className="w-[11.25vw] button-size"
                   >
-                    <img src={btn} />
+                    <img src={btn} alt="Contact Button" />
                   </button>
                   <button className="w-[11.25vw] button-size">
                     <a href={basic} download={"basic.pdf"}>
-                      <img src={btn1} />
+                      <img src={btn1} alt="Download Button" />
                     </a>
                   </button>
                 </div>

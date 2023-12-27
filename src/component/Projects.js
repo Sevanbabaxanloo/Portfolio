@@ -80,7 +80,7 @@ const Projects = () => {
         </div>
         <div>
           <button className="button-project">
-            <img src={contact} />
+            <img src={contact} alt="Contact Button"/>
           </button>
         </div>
       </div>

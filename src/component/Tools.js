@@ -28,33 +28,33 @@ const Tools = () => {
         </div>
         <div className="flex flex-row items-center justify-center gap-[3.889vw] container-size img-flex">
           <div className="flex flex-col items-center gap-[8px] w-[8.056vw]">
-            <img src={js} className="w-[42px]" />
+            <img src={js} alt="JavaScript" className="w-[42px]" />
             <p className="text-[#C5C5C5] text-[1.25vw] font-[300] font-[Montserrat] tracking-[0.36px] img-flex-text-lg">
               JavaScript
             </p>
           </div>
           <div className="flex flex-col items-center gap-[12px] w-[10vw]">
-            <img src={html} className="w-[56px]" />
+            <img src={html} alt="HTML" className="w-[56px]" />
             <p className="text-[#C5C5C5] text-[1.5vw] font-[300] font-[Montserrat] tracking-[0.56px] img-flex-text-lg">
               HTML
             </p>
           </div>
           <div className="flex flex-col items-center gap-[16px] w-[16.111vw]">
-            <img src={css} className="w-[75px]" />
+            <img src={css} alt="CSS" className="w-[75px]" />
             <p className="text-[#C5C5C5] text-[2.5vw] font-[300] font-[Montserrat] tracking-[0.72px] img-flex-text-lg">
               CSS
             </p>
           </div>
           <div className="flex flex-col items-center gap-[12px] w-[12.083vw] max-md:h-[17vw] ">
             <div className="h-[55px]">
-              <img src={tailwind} className="w-[56px]" />
+              <img src={tailwind} alt="Tailwind CSS" className="w-[56px]" />
             </div>
             <p className="text-[#C5C5C5] text-[1.5vw] font-[300] font-[Montserrat] tracking-[0.56px] img-flex-text-lg">
               Tailwind CSS
             </p>
           </div>
           <div className="flex flex-col items-center gap-[8px] w-[8.056vw]">
-            <img src={react} className="w-[42px]" />
+            <img src={react} alt="React JS" className="w-[42px]" />
             <p className="text-[#C5C5C5] text-[1.25vw] font-[300] font-[Montserrat] tracking-[0.36px] img-flex-text-lg">
               React JS
             </p>

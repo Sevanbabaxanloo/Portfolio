@@ -28,14 +28,19 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex flex-row justify-center gap-[18px]">
-          <a href="https://github.com/Sevanbabaxanloo" target="_blank">
-            <img src={Github} className="w-[24px]" />
+          <a
+            href="https://github.com/Sevanbabaxanloo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Github} alt="Github" className="w-[24px]" />
           </a>
           <a
             href="https://www.linkedin.com/in/sevan-babakhanloo-2094a728a/"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            <img src={Linkedin} className="w-[24px]" />
+            <img src={Linkedin} alt="Linkedin" className="w-[24px]" />
           </a>
         </div>
       </div>
