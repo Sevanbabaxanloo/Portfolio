@@ -4,7 +4,6 @@ import futurest from "../assets/futurest.jpg";
 import netflix from "../assets/netflix.jpg";
 import todo from "../assets/todo.jpg";
 import web3 from "../assets/web-3.jpg";
-import Rectangle from "../assets/Rectangle.svg";
 
 const Projects = () => {
   const object = [
@@ -72,6 +71,7 @@ const Projects = () => {
               <a
                 href={index.link}
                 target="_blank"
+                rel="noreferrer"
                 className="flex flex-col items-end relative h-full"
               >
                 <img

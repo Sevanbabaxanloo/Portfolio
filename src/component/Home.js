@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 import emoji from "../assets/image.svg";
 import btn from "../assets/btn.svg";
 import btn1 from "../assets/btn1.svg";
-
+import cv from "../assets/cv.png";
 
 const Home = () => {
   const contact = (id) => {
@@ -57,7 +57,7 @@ const Home = () => {
                     <img src={btn} alt="Contact Button" />
                   </button>
                   <button className="w-[11.25vw] button-size">
-                    <a href={""} download={""}>
+                    <a href={cv} download={"cv.avif"}>
                       <img src={btn1} alt="Download Button" />
                     </a>
                   </button>
