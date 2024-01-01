@@ -20,7 +20,10 @@ const Home = () => {
       <div className="flex flex-col items-center gap1">
         <div className="bg-gradient-circle flex flex-col items-center justify-center gap-[64px] rounded-full img-size">
           <div className="flex justify-center items-center w-[14.792vw] h-[14.792vw] rounded-full bg-gradient img-size">
-            <img className="min-w-full" src={emoji} alt="Emoji" />
+            <div
+              className="min-w-full bg-cover bg-center"
+              style={{ backgroundImage: `url(${emoji})`, height: "100%" }}
+            ></div>
           </div>
         </div>
         <div className="relative ">
