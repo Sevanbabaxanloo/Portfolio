@@ -69,7 +69,7 @@ const Projects = () => {
               }
             >
               <a
-                href={index.link}
+                href={item.link}
                 target="_blank"
                 rel="noreferrer"
                 className="flex flex-col items-end relative h-full"
