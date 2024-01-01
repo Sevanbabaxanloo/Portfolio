@@ -13,7 +13,7 @@ const Header = () => {
     <>
       <div
         id="Header"
-        className="bg-[var(--header-color)] w-screen z-10 fixed top-0 left-0 menu"
+        className="bg-[var(--header-color)] w-screen z-10 sticky top-0 menu"
       >
         <div className="h-[5.694vw] flex justify-center items-center mx-[23.194vw]">
           <ul className="font-fam w-full flex flex-row justify-between text-[var(--text)] text-[1.111vw] font-[700] tracking-[1.6px]">

@@ -2,14 +2,15 @@ import React from "react";
 import { BsEnvelope } from "react-icons/bs";
 import Github from "../assets/linkedin.svg";
 import Linkedin from "../assets/github.svg";
+import contact from "../assets/contact.svg";
 
 const Footer = () => {
   return (
     <div
       id="Contact"
-      className="w-screen h-[30vh] flex flex-col items-center justify-center mt-[64px] bg-[#222]"
+      className="w-screen  flex flex-col items-center justify-center mt-[100px] py-[32px] bg-[#222]"
     >
-      <div className="text-center flex flex-col gap-[32px] padding-footer">
+      <div className="text-center flex flex-col items-center gap-[10px] padding-footer">
         <div>
           <h2 className="text-[#fff] text-[1.597vw] font-[700] font-[Poppins] h1-footer">
             Contact
@@ -26,6 +27,17 @@ const Footer = () => {
           <p className="text-[#C5C5C5] text-[1.042vw] font-[600] font-[Poppins] tracking-[1px] email-text">
             sevanbabakhanloo@gmail.com
           </p>
+        </div>
+        <div className="mb-[15px]">
+          <a href="mailto:sevanbabakhanloo@gmail.com">
+            <button className="button-project flex justify-center">
+              <img
+                src={contact}
+                alt="Contact Button"
+                className="min-w-[11vw]"
+              />
+            </button>
+          </a>
         </div>
         <div className="flex flex-row justify-center gap-[18px]">
           <a

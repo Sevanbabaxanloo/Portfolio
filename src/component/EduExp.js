@@ -2,6 +2,7 @@ import React from "react";
 import futurest from "../assets/icon-exp/futurest.svg";
 import basic from "../assets/icon-exp/basic-logo.svg";
 import emoji from "../assets/icon-exp/me-emoji.svg";
+import certificate from "../assets/basic.pdf";
 
 const EduExp = () => {
   const obj = [
@@ -75,6 +76,15 @@ const EduExp = () => {
               <div>
                 <p className="text-[#C5C5C5] text-[0.972vw] font-[400] font-[Montserrat] date-text">
                   {item.text}
+                  {index === 1 && (
+                    <a
+                      href={certificate}
+                      download={"certificate.pdf"}
+                      className="text-gradient font-[600] ml-[5px] tracking-[1px]"
+                    >
+                      Certificate
+                    </a>
+                  )}
                 </p>
               </div>
             </div>

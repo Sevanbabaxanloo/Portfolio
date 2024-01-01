@@ -1,33 +1,42 @@
 import React from "react";
 import { MdOutlineOpenInNew } from "react-icons/md";
-import contact from "../assets/contact.svg";
+import futurest from "../assets/futurest.jpg";
+import netflix from "../assets/netflix.jpg";
+import todo from "../assets/todo.jpg";
+import web3 from "../assets/web-3.jpg";
 import Rectangle from "../assets/Rectangle.svg";
 
 const Projects = () => {
   const object = [
     {
-      text: "Project 1.com",
-      img: Rectangle,
+      text: "Futurest-web.com",
+      img: futurest,
+      link: "https://futurest-web.netlify.app/",
     },
     {
-      text: "Project 2.com",
-      img: Rectangle,
+      text: "Netflix-web.com",
+      img: netflix,
+      link: "https://netflix-web-application.netlify.app/",
     },
     {
-      text: "Project 3.com",
-      img: Rectangle,
+      text: "todo-web.com",
+      img: todo,
+      link: "https://todo-applists.netlify.app/",
     },
     {
-      text: "Project 4.com",
-      img: Rectangle,
+      text: "Group chat-web.com",
+      img: todo,
+      link: "https://chat-app-singin.netlify.app/",
     },
     {
-      text: "Project 5.com",
-      img: Rectangle,
+      text: "Project.com",
+      img: web3,
+      link: "",
     },
     {
-      text: "Project 6.com",
-      img: Rectangle,
+      text: "web3-web.com",
+      img: web3,
+      link: "https://web-333.netlify.app/",
     },
   ];
   return (
@@ -54,20 +63,24 @@ const Projects = () => {
           {object.map((item, index) => (
             <div
               key={index}
-              className={index === 2 || index === 3 ? "custom-size" : ""}
+              className={
+                index === 2 || index === 3
+                  ? "custom-size"
+                  : "h-[25.5vh] max-lg:h-[20vh]"
+              }
             >
               <a
-                href="/"
+                href={index.link}
                 target="_blank"
-                className="flex flex-col items-end relative"
+                className="flex flex-col items-end relative h-full"
               >
                 <img
                   src={item.img}
                   alt={`Project ${index + 1}`}
-                  className="w-[19.931vw] project-items"
+                  className="w-[20vw] h-full rounded-[2.2vw] project-items"
                 />
                 <div className="bg-[#222222] w-full h-[3vw] absolute bottom-0 rounded-b-[2vw] haight-size">
-                  <div className="flex items-center justify-center gap-[0.764vw] h-full">
+                  <div className="flex items-center justify-center gap-[0.764vw] w-full h-full">
                     <p className="text-[#fff] text-[1.042vw] font-[Montserrat] font-[500] text-project-link">
                       {item.text}
                     </p>
@@ -77,11 +90,6 @@ const Projects = () => {
               </a>
             </div>
           ))}
-        </div>
-        <div>
-          <button className="button-project">
-            <img src={contact} alt="Contact Button"/>
-          </button>
         </div>
       </div>
     </div>
