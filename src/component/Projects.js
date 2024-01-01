@@ -62,11 +62,12 @@ const Projects = () => {
           {object.map((item, index) => (
             <div
               key={index}
-              className={
+              className={`bg-cover bg-center ${
                 index === 2 || index === 3
                   ? "custom-size"
-                  : "h-[25.5vh] max-lg:h-[20vh]"
-              }
+                  : "w-[20vw] rounded-[2.1vw] project-items h-[25.5vh] max-lg:h-[20vh]"
+              }`}
+              style={{ backgroundImage: `url(${item.img})` }}
             >
               <a
                 href={item.link}
@@ -74,11 +75,6 @@ const Projects = () => {
                 rel="noreferrer"
                 className="flex flex-col items-end relative h-full"
               >
-                <img
-                  src={item.img}
-                  alt={`Project ${index + 1}`}
-                  className="w-[20vw] h-full rounded-[2.2vw] project-items"
-                />
                 <div className="bg-[#222222] w-full h-[3vw] absolute bottom-0 rounded-b-[2vw] haight-size">
                   <div className="flex items-center justify-center gap-[0.764vw] w-full h-full">
                     <p className="text-[#fff] text-[1.042vw] font-[Montserrat] font-[500] text-project-link">
