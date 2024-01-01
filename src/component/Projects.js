@@ -23,7 +23,7 @@ const Projects = () => {
       link: "https://todo-applists.netlify.app/",
     },
     {
-      text: "Group chat-web.com",
+      text: "chat-web.com",
       img: todo,
       link: "https://chat-app-singin.netlify.app/",
     },
