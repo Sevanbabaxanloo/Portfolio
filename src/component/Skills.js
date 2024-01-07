@@ -43,17 +43,17 @@ const Sills = () => {
   return (
     <div
       id="Skills"
-      className="w-screen flex items-center justify-center pt-[200px] padding"
+      className="w-full h-screen flex items-center justify-center max-md:py-[60px] max-md:px-[24px]"
     >
-      <div className="flex flex-col items-center justify-center gap-[64px]">
-        <div className="text-center flex flex-col gap-[32px]">
+      <div className="flex flex-col items-center justify-center gap-[64px] max-md:w-full">
+        <div className="w-full text-center flex flex-col gap-[32px] max-md:w-full">
           <div>
-            <h1 className="text-[#D9D9D9] text-[2.222vw] font-[Montserrat] font-[700] tracking-[3.84px] text-skills">
+            <h1 className="text-[#D9D9D9] text-[2.222vw] font-[Montserrat] font-[700] tracking-[3.84px] max-md:text-[28px] max-md:tracking-[2.88px] max-sm:text-[24px] ">
               Skills
             </h1>
           </div>
-          <div className="w-[40.972vw] width">
-            <p className="text-[#E8FFF7] text-[1.25vw] font-[300] font-[Montserrat] h1-skills">
+          <div className="w-[760px] max-md:w-full">
+            <p className="text-[#E8FFF7] text-[18px] font-[300] font-[Montserrat] tracking-[0.36px] max-md:text-[16px] max-md:tracking-[0.32px]">
               Passionate about creating user-friendly and visually appealing
               websites, I'm on the exciting journey of turning my coding skills
               into impactful web experiences.
@@ -63,18 +63,18 @@ const Sills = () => {
         <div className="flex flex-row gap-[40px] justify-center gap-skill">
           <div className="flex flex-col items-center gap-[23px]">
             <div className="w-full text-center flex justify-around">
-              <h2 className="text-[#FFF] text-[1.528vw] font-[700] font-[Montserrat] h1-skills">
+              <h2 className="text-[#FFF] text-[22px] font-[700] font-[Montserrat] max-sm:text-[16px] ">
                 Soft Skills
               </h2>
-              <h2 className="text-[#FFF] text-[1.528vw] font-[700] font-[Montserrat] h1-skills">
+              <h2 className="text-[#FFF] text-[22px] font-[700] font-[Montserrat] max-sm:text-[16px] ">
                 Hard Skills
               </h2>
             </div>
-            <div className="flex flex-row gap-[23px] w-full">
-              <div className="uppercase font-[Orbitron] text-[0.833vw] flex flex-col items-center gap-[2.2vh] items-font-size">
+            <div className="flex flex-row gap-[40px] w-full">
+              <div className="uppercase font-[Orbitron] text-[12px] font-[700] flex flex-col items-center gap-[2.2vh] items-font-size">
                 {render("rectangle-w", "skills")}
               </div>
-              <div className="uppercase font-[Orbitron] text-[0.833vw] flex flex-col items-center gap-[2.2vh] items-font-size">
+              <div className="uppercase font-[Orbitron] text-[12px] font-[700] flex flex-col items-center gap-[2.2vh] items-font-size">
                 {render("rectangle-g", "technologies")}
               </div>
             </div>

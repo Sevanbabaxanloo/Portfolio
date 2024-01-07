@@ -15,22 +15,22 @@ const Home = () => {
   return (
     <div
       id="Home"
-      className="w-screen flex items-center justify-center pt-[5vh] padding-top"
+      className="w-full h-container flex items-center justify-center max-md:py-[60px] max-md:px-[24px] max-md:h-screen"
     >
-      <div className="flex flex-col items-center gap1">
-        <div className="bg-gradient-circle flex flex-col items-center justify-center gap-[64px] rounded-full img-size">
-          <div className="flex justify-center items-center w-[14.792vw] h-[14.792vw] rounded-full bg-gradient img-size">
+      <div className="w-full flex flex-col items-center max-md:w-full max-md:gap-[32px] max-md:py-[35px]">
+        <div className="bg-gradient-circle flex flex-col items-center justify-center gap-[64px] rounded-full img-size max-sm:w-[62vw] max-sm:h-auto">
+          <div className="flex justify-center items-center w-[213px] h-[213px] rounded-full bg-gradient max-md:w-[180px] max-md:h-[180px]">
             <div
               className="min-w-full bg-cover bg-center"
               style={{ backgroundImage: `url(${emoji})`, height: "100%" }}
             ></div>
           </div>
         </div>
-        <div className="relative ">
-          <div className="flex flex-col items-center">
-            <div className="flex flex-col items-center justify-center gap-[3.16vh] gap">
-              <div className="w-[44vw] container-size">
-                <h1 className="text-[var(--text)] text-[3.819vw] font-bold font-[Montserrat] h1-text">
+        <div className="w-full relative max-md:w-full">
+          <div className="flex flex-col items-center max-md:w-full">
+            <div className="w-full flex flex-col items-center justify-center gap-[3.16vh] gap max-md:w-full">
+              <div className="w-[672px] container-size max-sm:w-full max-md:text-center moving-text">
+                <h1 className="text-[var(--text)] text-[55px] font-[800] font-[Montserrat] text-center max-md:text-[24px] max-md:h-[100px]">
                   I do code and guess what?
                   <span className="pl-[10px] text-gradient">
                     <Typewriter
@@ -45,23 +45,29 @@ const Home = () => {
                   </span>
                 </h1>
               </div>
-              <div className="w-[55.556vw] container-size text-center width">
-                <p className="font-[Montserrat] font-[300] text-[var(--p-text)] text-[1.25vw] text-home">
+              <div className="w-[760px] container-size text-center max-md:w-[650px] max-sm:w-full">
+                <p className="font-[Montserrat] font-[300] text-[var(--p-text)] text-[18px] tracking-[0.36px] max-md:text-[19px] max-md:tracking-[0.32px] max-sm:text-[16px]">
                   Hello, I'm Sevan Babakhanloo , a budding frontend developer
                   eager to make a mark in the digital realm.
                 </p>
               </div>
               <div className="flex flex-row items-flex-start">
-                <div className="flex gap-[2.37vw]">
+                <div className="flex gap-[2.37vw]  max-md:flex-col max-md:gap-[24px]">
                   <button
                     onClick={() => contact("Contact")}
-                    className="w-[11.25vw] button-size"
+                    className="w-[162px] relative button-size max-md:w-[162px] max-md:h-[40px]"
                   >
-                    <img src={btn} alt="Contact Button" />
+                    <img src={btn1} alt="Contact Button" />
+                    <p className="absolute text-[#000] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full text-[12px] font-[700] font-[orbitron] tracking-[1.2px] max-md:text-[14px]">
+                      Get In Touch
+                    </p>
                   </button>
-                  <button className="w-[11.25vw] button-size">
+                  <button className="w-[162px] relative button-size max-md:w-[162px] max-md:h-[40px]">
                     <a href={cv} download={"cv.avif"}>
-                      <img src={btn1} alt="Download Button" />
+                      <img src={btn} alt="Download Button" />
+                      <p className="absolute text-[#fff] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full text-[12px] font-[700] font-[orbitron] tracking-[1.2px] max-md:text-[14px]">
+                        Download CV
+                      </p>
                     </a>
                   </button>
                 </div>

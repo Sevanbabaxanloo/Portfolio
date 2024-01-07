@@ -2,6 +2,9 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -9,20 +12,16 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
   background-image: url("./assets/webdesign.svg");
-  overflow-x: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 
 :root {
   --bg-color: #161513;
   --header-color: rgba(34, 34, 34, 0.7);
-  --text: #ffffff;
+  --text: #fff;
   --p-text: #e8fff7;
 }
 
@@ -32,8 +31,8 @@ body {
 
 .bg-gradient-circle {
   position: relative;
-  width: 27.778vw;
-  height: 27.778vw;
+  width: 400px;
+  height: 400px;
 }
 
 .bg-gradient-circle::before {
@@ -43,7 +42,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  filter: blur(150px);
+  filter: blur(100px);
   background: rgb(28, 255, 173);
   background: linear-gradient(
     160deg,
@@ -90,29 +89,42 @@ body {
 
 .grid-cols-3 > div:nth-child(4) {
   justify-self: end;
-  align-items: start;
+  align-self: start;
 }
+
 .rectangle-w {
   position: relative;
-  width: 20vw;
-  height: 4.63vh;
+  width: 275px;
+  height: 47px;
   background-color: #fff;
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 15px) 100%, 0 100%);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 10px),
+    calc(100% - 15px) 100%,
+    0 100%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .rectangle-g {
   position: relative;
-  width: 20vw;
-  height: 4.63vh;
+  width: 275px;
+  height: 47px;
   background-image: linear-gradient(
     0deg,
     rgba(28, 255, 173, 1) 0%,
     rgba(31, 174, 168, 1) 50%,
     rgba(56, 119, 255, 1) 100%
   );
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 15px) 100%, 0 100%);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 10px),
+    calc(100% - 15px) 100%,
+    0 100%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,33 +218,11 @@ body {
 
 /* Start Home */
 @media screen and (max-width: 768px) {
-  .text-home {
-    font-size: 3vw;
-  }
-  .h1-text {
-    font-size: 6vw;
-  }
-  .container-size {
-    width: 65vw;
-  }
   .button-size {
     width: 15vw;
   }
-  .img-size {
-    width: 40vw;
-    height: 40vw;
-  }
-  .gap1 {
-    gap: 5vh;
-  }
-  .padding-top {
-    padding-top: 10vh;
-  }
 }
 @media screen and (max-width: 425px) {
-  .text-home {
-    font-size: 3.5vw;
-  }
   .h1-text {
     font-size: 5vw;
   }
@@ -242,8 +232,10 @@ body {
   .gap {
     gap: 4vh;
   }
-  .gap1 {
-    gap: 5vh;
+}
+@media screen and (max-width: 320px) {
+  .moving-text {
+    height: 120px;
   }
 }
 
@@ -252,45 +244,16 @@ body {
 /* Start Tools */
 
 @media screen and (max-width: 768px) {
-  .h1-tools {
-    font-size: 5vw;
-  }
-  .text-tools {
-    font-size: 3vw;
-  }
-  .img-flex {
-    flex-direction: column;
-  }
   .img-flex-text-lg {
-    font-size: 3vw;
-    width: 200px;
     display: flex;
     justify-content: center;
-  }
-  .padding {
-    padding-top: 150px;
-  }
-  .width {
-    width: 100%;
-    padding: 0 20px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .h1-tools {
-    font-size: 6vw;
-  }
-  .text-tools {
-    font-size: 3.5vw;
-  }
   .img-flex-text-lg {
-    font-size: 3.5vw;
-    width: 200px;
     display: flex;
     justify-content: center;
-  }
-  .padding {
-    padding-top: 100px;
   }
 }
 
@@ -299,24 +262,8 @@ body {
 /* Start EduExp */
 
 @media screen and (max-width: 768px) {
-  .text-EduExp {
-    font-size: 3vw;
-  }
-  .h1-EduExp {
-    font-size: 5vw;
-  }
   .container-EduExp {
     width: 65vw;
-  }
-  .font-text {
-    font-size: 3vw;
-  }
-  .img-size-icon {
-    width: 4vw;
-  }
-  .date-text {
-    font-size: 3.5vw;
-    text-align: center;
   }
   .felx-position {
     align-items: center;
@@ -331,12 +278,6 @@ body {
 /* Start Skills */
 
 @media screen and (max-width: 768px) {
-  .text-skills {
-    font-size: 5vw;
-  }
-  .h1-skills {
-    font-size: 3vw;
-  }
   .container-skills {
     width: 65vw;
   }
@@ -349,12 +290,6 @@ body {
   }
   .items-font-size {
     font-size: 1.7vw;
-  }
-  .rectangle-w {
-    width: 35vw;
-  }
-  .rectangle-g {
-    width: 35vw;
   }
 }
 @media screen and (max-width: 425px) {
@@ -378,15 +313,6 @@ body {
 /* Start Projects */
 
 @media screen and (max-width: 768px) {
-  .text-project {
-    font-size: 3.5vw;
-  }
-  .h1-project {
-    font-size: 5vw;
-  }
-  .button-project {
-    width: 25vw;
-  }
   .project-items {
     width: 27vw;
   }
@@ -396,12 +322,6 @@ body {
   }
 }
 @media screen and (max-width: 425px) {
-  .text-project-link {
-    font-size: 1.7vw;
-  }
-  .button-project {
-    width: 25vw;
-  }
   .project-items {
     width: 27vw;
   }
@@ -414,28 +334,6 @@ body {
 }
 
 /* End Projects */
-
-/* Start Footer */
-
-@media screen and (max-width: 768px) {
-  .h1-footer {
-    font-size: 5vw;
-  }
-  .email-text {
-    font-size: 2vw;
-  }
-}
-@media screen and (max-width: 425px) {
-  .email-text {
-    font-size: 3vw;
-  }
-  .padding-footer {
-    padding: 20px 0;
-    gap: 16px;
-  }
-}
-
-/* End Footer */
 
 /* Start Header */
 

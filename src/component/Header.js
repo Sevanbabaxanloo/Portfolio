@@ -13,10 +13,10 @@ const Header = () => {
     <>
       <div
         id="Header"
-        className="bg-[var(--header-color)] w-screen z-10 sticky top-0 menu"
+        className="bg-[var(--header-color)] w-full z-10 sticky top-0 menu"
       >
-        <div className="h-[5.694vw] flex justify-center items-center mx-[23.194vw]">
-          <ul className="font-fam w-full flex flex-row justify-between text-[var(--text)] text-[1.111vw] font-[700] tracking-[1.6px]">
+        <div className="h-[82px] flex justify-center items-center ">
+          <ul className="font-fam w-full flex flex-row gap-[21px] justify-center text-[var(--text)] text-[16px] font-[700] tracking-[1.6px]">
             <li className="cursor-pointer" onClick={() => handleScroll("Home")}>
               Home
             </li>

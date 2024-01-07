@@ -28,18 +28,18 @@ const EduExp = () => {
   return (
     <div
       id="EduExp"
-      className="w-screen flex items-center justify-center pt-[200px] padding"
+      className="w-full h-screen flex items-center justify-center max-md:py-[60px] max-md:px-[24px] max-md:h-content max-md:h-full"
     >
-      <div className="flex flex-col items-center gap-[64px]">
-        <div>
+      <div className="flex flex-col items-center gap-[64px] max-md:w-full max-md:pt-0 max-md:gap-[32px]">
+        <div className="max-md:w-full">
           <div className="text-center flex flex-col items-center gap-[32px]">
             <div className="container-EduExp flex flex-col items-center">
-              <h2 className="text-[#D9D9D9] text-[2.222vw] font-[700] font-[Montserrat] tracking-[3.84px] uppercase h1-EduExp">
+              <h2 className="text-[#D9D9D9] text-[32px] font-[700] font-[Montserrat] tracking-[3.84px] uppercase max-md:text-[28px] max-md:tracking-[2.88px] max-sm:text-[24px]">
                 Education & Experience
               </h2>
             </div>
-            <div className="w-[55.556vw] width">
-              <p className="text-[#E8FFF7] text-[1.25vw] font-[300] font-[Montserrat] tracking-[0.36px] text-EduExp">
+            <div className="w-[760px] max-md:w-full">
+              <p className="text-[#E8FFF7] text-[18px] font-[300] font-[Montserrat] tracking-[0.36px] max-md:text-[20px] max-md:tracking-[0.32px] max-sm:text-[16px]">
                 Though my professional journey is just beginning, I've already
                 dipped my toes into various projects, gaining hands-on
                 experience in crafting responsive and intuitive user interfaces.
@@ -49,43 +49,45 @@ const EduExp = () => {
             </div>
           </div>
         </div>
-        <div className="w-[55.556vw] flex flex-col gap-[50px] width">
+        <div className="w-[760px] flex flex-col gap-[50px] max-md:w-full">
           {obj.map((item, index) => (
             <div key={index} className="flex flex-col gap-[23px]">
-              <div className="flex flex-row justify-between gap-[2.222vw] flex-direction felx-position">
-                <div className="flex flex-row items-center gap-[0.764vw]">
+              <div className="flex flex-row justify-between gap-[2.222vw] flex-direction felx-position max-md:items-start">
+                <div className="flex flex-row items-center gap-[0.764vw] max-md:flex-col max-md:gap-[11px] max-md:items-start">
                   <div>
                     <img
                       src={item.img}
                       alt={`Logo for ${item.name}`}
-                      className="w-[32px] img-size-icon"
+                      className="w-[32px]"
                     />
                   </div>
                   <div>
-                    <h3 className="text-[#fff] text-[1.528vw] font-[700] font-[Montserrat] font-text">
+                    <h3 className="text-[#fff] text-[22px] font-[700] font-[Montserrat] max-md:text-[20px] max-sm:text-[16px] text-center">
                       {item.name}
                     </h3>
                   </div>
                 </div>
                 <div className="flex flex-col justify-center">
-                  <p className="text-[#C5C5C5] text-[0.972vw] font-[400] font-[Montserrat] date-text">
+                  <p className="text-[#8491A0] text-[14px] font-[400] font-[Montserrat]  max-sm:text-[16px]">
                     {item.date}
                   </p>
                 </div>
               </div>
-              <div>
-                <p className="text-[#C5C5C5] text-[0.972vw] font-[400] font-[Montserrat] date-text">
+              <div className="flex flex-col gap-[18px]">
+                <p className="text-[#8491A0] text-[14px] font-[400] font-[Montserrat] text-center max-md:text-[18px] max-sm:text-[16px] max-md:text-left">
                   {item.text}
-                  {index === 1 && (
+                </p>
+                {index === 1 && (
+                  <p>
                     <a
                       href={certificate}
                       download={"certificate.pdf"}
-                      className="text-gradient font-[600] ml-[5px] tracking-[1px]"
+                      className="text-gradient tracking-[1.6px] text-[20px] font-[700] font-[orbitron] leading-4"
                     >
                       Certificate
                     </a>
-                  )}
-                </p>
+                  </p>
+                )}
               </div>
             </div>
           ))}

@@ -36,26 +36,34 @@ const HeaderMenu = () => {
 
   return (
     <div
-      className={`fixed top-0 z-40 ${
-        isMenuOpen ? "w-[100vw] h-[100vh] bg-[#323232]" : ""
+      className={`sticky top-0 z-40 ${
+        isMenuOpen ? "w-[100vw] h-[100vh] bg-[#323232]" : "hidden menu-screen"
       }`}
     >
-      <div>
-        <div className="pl-[20px] pt-[20px] hidden menu-screen">
-          <button
-            onClick={handleToggleMenu}
-            className="bg-[#222] border-[2px] border-[#4f4f4f] w-[35px] h-[35px] rounded-[50%] flex items-center justify-center"
-          >
-            {isMenuOpen ? (
-              <TfiClose className="text-[#4f4f4f]" />
-            ) : (
-              <TfiMenu className="text-[#4f4f4f]" />
-            )}
-          </button>
+      <div
+        className={
+          isMenuOpen
+            ? ""
+            : "w-screen h-[64px] max-md:bg-[#222] max-md:bg-opacity-70 flex justify-center items-center"
+        }
+      >
+        <div className="">
+          <div className="flex justify-center h-[64px]">
+            <button
+              onClick={handleToggleMenu}
+              className={isMenuOpen ? "" : "flex items-center justify-center"}
+            >
+              {isMenuOpen ? (
+                <TfiClose className="text-[#fff] w-[24px] h-[24px] " />
+              ) : (
+                <TfiMenu className="text-[#fff] w-[24px] h-[24px] " />
+              )}
+            </button>
+          </div>
         </div>
         {isMenuOpen && (
           <div className="flex flex-col items-center justify-center">
-            <ul className="w-[100%] h-[70vh] flex flex-col items-center justify-center gap-[40px] text-[#fff] font-[Orbitron] tracking-[5px] mt-[40px]">
+            <ul className="w-[100%] h-[70vh] flex flex-col items-center justify-center gap-[40px] text-[#fff] font-[Orbitron] tracking-[5px]">
               <li onClick={() => handleScroll("Home")}>Home</li>
               <li onClick={() => handleScroll("Tools")}>Tools</li>
               <li onClick={() => handleScroll("EduExp")}>Edu. & Exp.</li>
