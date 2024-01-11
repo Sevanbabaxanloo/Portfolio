@@ -321,8 +321,11 @@ body {
   .haight-size {
     height: 4vw;
   }
+  .haight-container {
+    height: fit-content;
+  }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 374px) {
   .container-size {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     justify-items: center;
@@ -369,3 +372,13 @@ body {
 }
 
 /* End HeaderMenu */
+
+/* Start Footer */
+
+@media screen and (max-width: 320px) {
+  .mail-text-size {
+    font-size: 4.5vw !important;
+  }
+}
+
+/* End Footer */

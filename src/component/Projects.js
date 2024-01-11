@@ -48,7 +48,7 @@ const Projects = () => {
   return (
     <div
       id="Projects"
-      className="w-full h-screen flex items-center justify-center max-md:py-[60px] max-md:px-[24px] max-md:h-content haight-container"
+      className="w-full h-screen flex items-center justify-center max-md:py-[60px] max-md:px-[24px] max-md:h-content max-sm:h-content haight-container"
     >
       <div className="flex flex-col items-center justify-center gap-[64px] max-md:w-full max-sm:gap-[32px]">
         <div className="w-full text-center flex flex-col items-center gap-[32px]">
