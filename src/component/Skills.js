@@ -43,7 +43,7 @@ const Sills = () => {
   return (
     <div
       id="Skills"
-      className="w-full h-screen flex items-center justify-center max-md:py-[60px] max-md:px-[24px]"
+      className="w-full h-container flex items-center justify-center max-md:py-[60px] max-md:px-[24px]"
     >
       <div className="flex flex-col items-center justify-center gap-[64px] max-md:w-full">
         <div className="w-full text-center flex flex-col gap-[32px] max-md:w-full">
@@ -61,20 +61,18 @@ const Sills = () => {
           </div>
         </div>
         <div className="flex flex-row gap-[40px] justify-center gap-skill">
-          <div className="flex flex-col items-center gap-[23px]">
-            <div className="w-full text-center flex justify-around">
-              <h2 className="text-[#FFF] text-[22px] font-[700] font-[Montserrat] max-sm:text-[16px] ">
-                Soft Skills
-              </h2>
-              <h2 className="text-[#FFF] text-[22px] font-[700] font-[Montserrat] max-sm:text-[16px] ">
-                Hard Skills
-              </h2>
-            </div>
-            <div className="flex flex-row gap-[40px] w-full">
-              <div className="uppercase font-[Orbitron] text-[12px] font-[700] flex flex-col items-center gap-[2.2vh] items-font-size">
+          <div className="w-[768px] flex flex-col items-center gap-[23px] max-md:w-full">
+            <div className="flex flex-row justify-center gap-[40px] w-full max-md:flex-wrap max-md:flex-col max-md:w-[73vw]">
+              <div className="font-[Orbitron] text-[12px] font-[700] flex flex-col items-center gap-[2.2vh] max-md:w-[73vw]">
+                <h2 className="text-[#FFF] text-[22px] font-[700] font-[Montserrat] max-md:text-[16px]">
+                  Soft Skills
+                </h2>
                 {render("rectangle-w", "skills")}
               </div>
-              <div className="uppercase font-[Orbitron] text-[12px] font-[700] flex flex-col items-center gap-[2.2vh] items-font-size">
+              <div className="font-[Orbitron] text-[12px] font-[700] flex flex-col items-center gap-[2.2vh] max-md:w-[73vw]">
+                <h2 className="text-[#FFF] text-[22px] font-[700] font-[Montserrat] max-md:text-[16px]">
+                  Hard Skills
+                </h2>
                 {render("rectangle-g", "technologies")}
               </div>
             </div>

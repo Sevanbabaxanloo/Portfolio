@@ -77,9 +77,9 @@ body {
 }
 
 .custom-size {
-  width: 14.653vw;
-  height: 19vh;
-  border-radius: 2vw;
+  width: 211px;
+  height: 191px;
+  border-radius: 41px;
 }
 
 .grid-cols-3 > div:nth-child(3) {
@@ -107,6 +107,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 }
 .rectangle-g {
   position: relative;
@@ -128,6 +129,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .text-gradient {
@@ -241,24 +243,6 @@ body {
 
 /* End Home */
 
-/* Start Tools */
-
-@media screen and (max-width: 768px) {
-  .img-flex-text-lg {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .img-flex-text-lg {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-/* End Tools */
-
 /* Start EduExp */
 
 @media screen and (max-width: 768px) {
@@ -275,6 +259,14 @@ body {
 
 /* End EduExp */
 
+/* Start tools */
+@media screen and (max-width: 768px) {
+  .text {
+    font-size: 3.7vw;
+  }
+}
+/* End tools */
+
 /* Start Skills */
 
 @media screen and (max-width: 768px) {
@@ -288,9 +280,6 @@ body {
     width: 25vw;
     height: 34px;
   }
-  .items-font-size {
-    font-size: 1.7vw;
-  }
 }
 @media screen and (max-width: 425px) {
   .img-skills-btn {
@@ -303,8 +292,13 @@ body {
   .width-line {
     width: 40%;
   }
-  .items-font-size {
-    font-size: 1.8vw;
+  .rectangle-g {
+    width: 64vw;
+    font-size: 2.8vw;
+  }
+  .rectangle-w {
+    width: 64vw;
+    font-size: 2.8vw;
   }
 }
 
@@ -316,20 +310,41 @@ body {
   .project-items {
     width: 27vw;
   }
-  .custom-size {
-    width: 18vw;
-    height: 13vh;
+  .container-size {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @media screen and (max-width: 425px) {
   .project-items {
     width: 27vw;
   }
-  .custom-size {
-    width: 18vw;
-  }
   .haight-size {
     height: 4vw;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container-size {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    justify-items: center;
+  }
+  .haight-container {
+    height: fit-content;
+  }
+  .grid-cols-3 > div:nth-child(3) {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .grid-cols-3 > div:nth-child(4) {
+    justify-self: center;
+    align-self: center;
+  }
+  .small-size {
+    width: 200px !important;
+    height: 150px !important;
+  }
+  .container-grid {
+    width: 100% !important;
   }
 }
 

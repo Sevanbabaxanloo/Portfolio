@@ -6,6 +6,58 @@ import react from "../assets/icon/reactjs.svg";
 import tailwind from "../assets/icon/tailwind.svg";
 
 const Tools = () => {
+  const tools = [
+    {
+      src: js,
+      alt: "JavaScript",
+      text: "JavaScript",
+      imgClass: "w-[42px] h-[42px] max-md:w-[35px]",
+      textClass: "text-[18px] max-lg:text-[12px]",
+      widthClass:
+        "w-[116px] max-md:w-full max-lg:w-[97px] max-md:h-[63px] max-md:col-start-2 max-md:col-end-4",
+      orderClass: "order-1 max-md:order-4",
+    },
+    {
+      src: html,
+      alt: "HTML",
+      text: "HTML",
+      imgClass: "w-[55px] h-[63px] max-md:w-[31px]",
+      textClass: "text-[27px] max-lg:text-[2vw]",
+      widthClass:
+        "w-[174px] max-md:w-full max-lg:w-[97px] max-md:h-[63px] max-md:col-span-2 max-md:row-span-1",
+      orderClass: "order-2 max-md:order-2",
+    },
+    {
+      src: css,
+      alt: "CSS",
+      text: "CSS",
+      imgClass: "w-[75px] h-[84px] max-md:w-[31px]",
+      textClass: "text-[36px] max-lg:text-[30px]",
+      widthClass:
+        "w-[232px] max-md:w-full max-lg:w-[97px] max-md:h-[63px] max-md:col-span-2 max-md:row-span-1",
+      orderClass: "order-3 max-md:order-1",
+    },
+    {
+      src: tailwind,
+      alt: "Tailwind CSS",
+      text: "Tailwind CSS",
+      imgClass: "w-[63px] h-[63px] max-md:w-[35px]",
+      textClass: "text-[27px] max-lg:text-[2vw]",
+      widthClass:
+        "w-[176px] max-md:w-full max-md:h-[63px] max-md:col-span-2 max-md:row-span-1",
+      orderClass: "order-4 max-md:order-3",
+    },
+    {
+      src: react,
+      alt: "React JS",
+      text: "React JS",
+      imgClass: "w-[47px] h-[42px] max-md:w-[39px]",
+      textClass: "text-[18px] max-lg:text-[12px]",
+      widthClass:
+        "w-[116px] max-md:w-full max-lg:w-[97px] max-md:h-[63px] max-md:col-start-4 max-md:col-end-6",
+      orderClass: "order-5 max-md:order-5",
+    },
+  ];
   return (
     <div
       id="Tools"
@@ -26,59 +78,20 @@ const Tools = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-row items-center justify-center gap-[3.889vw] img-flex max-md:grid max-md:grid-cols-3 ">
-          <div className="flex flex-col items-center gap-[8px] w-[8.056vw] max-md:gap-[6.67px]">
-            <img
-              src={js}
-              alt="JavaScript"
-              className="w-[42px] h-[42px] max-md:w-[31px] "
-            />
-            <p className="text-[#C5C5C5] text-[1.25vw] font-[300] font-[Montserrat] tracking-[0.36px] img-flex-text-lg max-md:text-[14px] max-md:tracking-[0.28px]">
-              JavaScript
-            </p>
-          </div>
-          <div className="flex flex-col items-center gap-[12px] w-[10vw] max-md:gap-[6.67px]">
-            <img
-              src={html}
-              alt="HTML"
-              className="w-[55px] h-[63px] max-md:w-[31px]"
-            />
-            <p className="text-[#C5C5C5] text-[1.5vw] font-[300] font-[Montserrat] tracking-[0.56px] img-flex-text-lg max-md:text-[14px]">
-              HTML
-            </p>
-          </div>
-          <div className="flex flex-col items-center gap-[16px] w-[16.111vw] max-md:gap-[6.67px]">
-            <img
-              src={css}
-              alt="CSS"
-              className="w-[75px] h-[84px] max-md:w-[31px] "
-            />
-            <p className="text-[#C5C5C5] text-[2.5vw] font-[300] font-[Montserrat] tracking-[0.72px] img-flex-text-lg max-md:text-[14px]">
-              CSS
-            </p>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-[12px] w-[12.083vw] max-md:h-[17vw] max-md:gap-[6.67px]">
-            <div className="h-[55px] flex">
-              <img
-                src={tailwind}
-                alt="Tailwind CSS"
-                className="w-[63px] h-[63]"
-              />
+        <div className="w-[1023px] grid grid-cols-5 auto-rows-fr gap-[3.8vw] justify-items-center items-center max-lg:w-[90vw] max-md:grid-cols-6 max-md:grid-rows-2 max-md:w-[91vw]">
+          {tools.map((tool, index) => (
+            <div
+              key={index}
+              className={`flex flex-col items-center gap-[8px] max-md:gap-[6.67px] ${tool.widthClass} ${tool.orderClass}`}
+            >
+              <img src={tool.src} alt={tool.alt} className={tool.imgClass} />
+              <p
+                className={`text-[#C5C5C5] font-[300] font-[Montserrat] tracking-[0.36px] img-flex-text-lg max-md:text-[12px] ${tool.textClass}`}
+              >
+                {tool.text}
+              </p>
             </div>
-            <p className="text-[#C5C5C5] text-[1.5vw] font-[300] font-[Montserrat] tracking-[0.56px] img-flex-text-lg max-md:text-[14px]">
-              Tailwind CSS
-            </p>
-          </div>
-          <div className="flex flex-col items-center gap-[8px] w-[8.056vw] max-md:gap-[6.67px]">
-            <img
-              src={react}
-              alt="React JS"
-              className="w-[47px] h-[42px] max-md:w-[31px]"
-            />
-            <p className="text-[#C5C5C5] text-[1.25vw] font-[300] font-[Montserrat] tracking-[0.36px] img-flex-text-lg max-md:text-[14px]">
-              React JS
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 import emoji from "../assets/image.svg";
 import btn from "../assets/btn.svg";
 import btn1 from "../assets/btn1.svg";
-import cv from "../assets/cv.png";
+import cv from "../assets/sevan_babakhanloo_cv.pdf";
 
 const Home = () => {
   const contact = (id) => {
@@ -31,8 +31,8 @@ const Home = () => {
             <div className="w-full flex flex-col items-center justify-center gap-[3.16vh] gap max-md:w-full">
               <div className="w-[672px] container-size max-sm:w-full max-md:text-center moving-text">
                 <h1 className="text-[var(--text)] text-[55px] font-[800] font-[Montserrat] text-center max-md:text-[24px] max-md:h-[100px]">
-                  I do code and guess what?
-                  <span className="pl-[10px] text-gradient">
+                  I do code and guess what
+                  <span className="ml-[10px] text-gradient">
                     <Typewriter
                       words={["I start it!", "I practice It!", "I loved it!"]}
                       loop={true}
@@ -63,7 +63,7 @@ const Home = () => {
                     </p>
                   </button>
                   <button className="w-[162px] relative button-size max-md:w-[162px] max-md:h-[40px]">
-                    <a href={cv} download={"cv.avif"}>
+                    <a href={cv} download={"cv.pdf"}>
                       <img src={btn} alt="Download Button" />
                       <p className="absolute text-[#fff] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full text-[12px] font-[700] font-[orbitron] tracking-[1.2px] max-md:text-[14px]">
                         Download CV
