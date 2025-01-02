@@ -86,7 +86,7 @@ const Tools = () => {
             >
               <img src={tool.src} alt={tool.alt} className={tool.imgClass} />
               <p
-                className={`text-[#C5C5C5] font-[300] font-[Montserrat] tracking-[0.36px] img-flex-text-lg max-md:text-[12px] ${tool.textClass}`}
+                className={`text-[#C5C5C5] font-[300] font-[Montserrat] tracking-[0.36px] text-center img-flex-text-lg max-md:text-[12px] ${tool.textClass}`}
               >
                 {tool.text}
               </p>

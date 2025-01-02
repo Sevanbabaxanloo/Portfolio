@@ -1,40 +1,40 @@
 import React from "react";
 import { MdOutlineOpenInNew } from "react-icons/md";
 import futurest from "../assets/futurest.jpg";
-import netflix from "../assets/netflix.jpg";
+import Portfolio from "../assets/Portfolio.jpg";
 import todo from "../assets/todo.jpg";
 import web3 from "../assets/web-3.jpg";
-import gp from "../assets/group-chat.jpg";
+import Upcoming from "../assets/Upcoming.webp";
 
 const Projects = () => {
   const object = [
     {
-      text: "Futurest-web.com",
+      text: "Futurest-Web.com",
       img: futurest,
       link: "https://futurest-web.netlify.app/",
       orderClass: "order-1 max-md:order-1",
     },
     {
-      text: "Netflix-web.com",
-      img: netflix,
-      link: "https://netflix-web-application.netlify.app/",
+      text: "Portfolio-Web.com",
+      img: Portfolio,
+      link: "https://startling-gingersnap-074e1f.netlify.app/",
       orderClass: "order-2 max-md:order-3",
     },
     {
-      text: "todo-web.com",
+      text: "Todo-Web.com",
       img: todo,
       link: "https://todo-applists.netlify.app/",
       orderClass: "order-3 max-md:order-2",
     },
     {
-      text: "chat-web.com",
-      img: gp,
-      link: "https://chat-app-singin.netlify.app/",
+      text: "XO-Web.com",
+      img: Upcoming,
+      link: "",
       orderClass: "order-4 max-md:order-5",
     },
     {
-      text: "Project.com",
-      img: web3,
+      text: "Upcoming.com",
+      img: Upcoming,
       link: "",
       orderClass: "order-5 max-md:order-6",
     },
@@ -87,7 +87,7 @@ const Projects = () => {
                     <p className="text-[#fff] text-[14px] font-[Montserrat] font-[500] max-md:text-[10px]">
                       {item.text}
                     </p>
-                    <MdOutlineOpenInNew className="text-[#fff] text-[1.111vw] " />
+                    <MdOutlineOpenInNew className="text-[#fff] text-[15px] " />
                   </div>
                 </div>
               </a>
