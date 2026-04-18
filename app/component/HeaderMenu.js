@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useLayoutEffect, useState } from "react";
 import { TfiMenu, TfiClose } from "react-icons/tfi";
 
