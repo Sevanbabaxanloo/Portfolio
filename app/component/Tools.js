@@ -63,7 +63,7 @@ const Tools = () => {
   return (
     <div
       id="Tools"
-      className="w-full min-h-[350px] flex items-center justify-center max-md:py-[60px] max-md:px-[24px]"
+      className="global-margin w-full min-h-[350px] flex items-center justify-center max-md:py-[60px] max-md:px-[24px]"
     >
       <div className="global-padding flex flex-col items-center gap-[64px] max-md:w-full">
         <div className="w-full flex flex-col items-center gap-[32px] max-md:w-full">

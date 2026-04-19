@@ -50,7 +50,7 @@ const HeaderMenu = () => {
         }
       >
         <div className="w-full flex justify-center items-center max-md:px-[24px] bg-[#323232]">
-          <div className="flex justify-center h-[64px] w-full max-md:justify-end bg-[#323232]">
+          <div className="flex justify-center h-[64px] w-full max-md:justify-start bg-[#323232]">
             <button
               onClick={handleToggleMenu}
               className={isMenuOpen ? "flex items-center justify-center bg-[#323232] h-[64px] w-[64px] border-none outline-none" : "flex items-center justify-center bg-[#323232] h-[64px] w-[64px] border-none outline-none"}
