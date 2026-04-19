@@ -31,14 +31,15 @@ const Home = () => {
 
         <div className="w-full relative max-md:w-full">
           <div className="flex flex-col items-center max-md:w-full">
-            <div className="global-padding w-[1010px] flex flex-col items-center justify-center gap-[32px] gap max-md:w-full">
-              <div className="w-full h-[150px] container-size max-sm:w-auto max-md:text-center moving-text">
+            <div className="global-padding w-full flex flex-col items-center justify-center gap-[32px] gap max-md:w-full">
+              <div className="w-full h-content container-size max-sm:w-auto max-md:text-center moving-text">
                 <h1 className="text-[var(--text)] text-[55px] font-[800] font-montserrat text-center max-md:text-[24px] max-md:h-[100px]">
-                  I do code and guess what
+                  Turning designs into clean <br/>
+                  interactive UIs
                   <br />
                   <span className="ml-[10px] text-gradient font-montserrat">
                     <Typewriter
-                      words={["I start it!", "I practice It!", "I loved it!"]}
+                      words={["JavaScript", "React", "Web Development"]}
                       loop={true}
                       cursor
                       cursorStyle="_"
@@ -52,8 +53,7 @@ const Home = () => {
 
               <div className="w-[760px] container-size text-center max-md:w-[650px] max-sm:w-full">
                 <p className=" font-montserrat font-[300] text-[var(--p-text)] text-[18px] tracking-[0.36px] max-md:text-[19px] max-md:tracking-[0.32px] max-sm:text-[16px]">
-                  Hello, I'm Sevan Babakhanloo , a budding frontend developer
-                  eager to make a mark in the digital realm.
+                  Hello, I'm Sevan Babakhanloo , Junior front-end developer with experience in React, Tailwind CSS and real client projects. Based in Yerevan, open to remote roles.
                 </p>
               </div>
 

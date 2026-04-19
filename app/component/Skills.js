@@ -43,7 +43,7 @@ const Sills = () => {
   return (
     <div
       id="Skills"
-      className="global-margin w-full h-[1024px] flex items-center justify-center max-md:py-[60px] max-md:px-[24px]"
+      className="global-margin w-full h-[720px] flex items-center justify-center max-md:py-[60px] max-md:px-[24px]"
     >
       <div className="global-padding flex flex-col items-center justify-center gap-[64px] max-md:w-full max-sm:gap-[32px]`">
         <div className="w-full text-center flex flex-col gap-[32px] max-md:w-full">
@@ -51,13 +51,6 @@ const Sills = () => {
             <h1 className="text-[#D9D9D9] text-[32px] font-montserrat font-[700] tracking-[3.84px] max-md:text-[28px] max-md:tracking-[2.88px] max-sm:text-[24px] max-md:w-full">
               Skills
             </h1>
-          </div>
-          <div className="w-[760px] max-md:w-full">
-            <p className="text-[#E8FFF7] text-[18px] font-[300] font-montserrat tracking-[0.36px] max-md:text-[16px] max-md:tracking-[0.32px]">
-              Passionate about creating user-friendly and visually appealing
-              websites, I'm on the exciting journey of turning my coding skills
-              into impactful web experiences.
-            </p>
           </div>
         </div>
         <div className="flex flex-row gap-[40px] justify-center gap-skill">

@@ -30,7 +30,7 @@ const EduExp = () => {
   return (
     <div
       id="EduExp"
-      className="w-full h-[1024px] flex items-center justify-center max-md:py-[60px] max-md:px-[24px] max-md:h-content max-md:h-[1440px]"
+      className="w-full h-[900px] flex items-center justify-center max-md:py-[60px] max-md:px-[24px] max-md:h-content max-md:h-[1440px]"
     >
       <div className="global-padding flex flex-col items-center gap-[64px] max-md:w-full max-md:pt-0 max-md:gap-[32px]">
         <div className="max-md:w-full">
