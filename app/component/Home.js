@@ -19,7 +19,7 @@ const Home = () => {
       id="Home"  
       className="global-margin w-full h-[850px] flex items-center justify-center max-md:py-[60px] max-md:px-[24px] max-md:min-h-screen"
     >
-      <div className=" w-full flex flex-col items-center max-md:w-full max-md:gap-[32px] max-md:py-[35px]">
+      <div className=" w-full flex flex-col items-center max-md:w-full max-md:gap-[32px] max-md:py-[35px] max-sm:gap-[0px]">
         <div className="bg-gradient-circle flex flex-col items-center justify-center gap-[64px] rounded-full img-size max-sm:w-[62vw] max-sm:h-auto">
           <div className="flex justify-center items-center w-[213px] h-[213px] rounded-full bg-gradient max-md:w-[180px] max-md:h-[180px]">
             <div
@@ -31,9 +31,9 @@ const Home = () => {
 
         <div className="w-full relative max-md:w-full">
           <div className="flex flex-col items-center max-md:w-full">
-            <div className="global-padding w-full flex flex-col items-center justify-center gap-[32px] gap max-md:w-full">
+            <div className="global-padding w-full h-content flex flex-col items-center justify-center gap-[32px] gap max-md:w-full">
               <div className="w-full h-content container-size max-sm:w-auto max-md:text-center moving-text">
-                <h1 className="text-[var(--text)] text-[55px] font-[800] font-montserrat text-center max-md:text-[24px] max-md:h-[100px]">
+                <h1 className="text-[var(--text)] h-content text-[55px] font-[800] font-montserrat text-center max-lg:text-[48px] max-md:text-[36px] max-sm:text-[27px]">
                   Turning designs into clean <br/>
                   interactive UIs
                   <br />

@@ -43,7 +43,7 @@ const Sills = () => {
   return (
     <div
       id="Skills"
-      className="global-margin w-full h-[720px] flex items-center justify-center max-md:py-[60px] max-md:px-[24px]"
+      className="global-margin w-full h-[1024px] flex items-center justify-center max-md:py-[60px] max-md:px-[24px]"
     >
       <div className="global-padding flex flex-col items-center justify-center gap-[64px] max-md:w-full max-sm:gap-[32px]`">
         <div className="w-full text-center flex flex-col gap-[32px] max-md:w-full">

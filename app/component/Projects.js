@@ -36,7 +36,7 @@ const Projects = () => {
   return (
 <div
   id="Projects"
-  className="global-margin w-full min-h-[720px] flex items-center justify-center px-6 py-16 "
+  className="global-margin w-full min-h-[1024px] flex items-center justify-center px-6 py-16 "
 >
   <div className="global-padding w-full flex flex-col items-center gap-16">
     <div className="w-full text-center flex flex-col items-center gap-8">
@@ -52,7 +52,7 @@ const Projects = () => {
         </p>
       </div>
     </div>
-    <div className="grid w-full max-w-[920px] grid-cols-2 grid-rows-2 gap-[28px] justify-items-center max-lg:grid-cols-2 max-lg:grid-rows-3 max-lg:w-[700px] max-md:w-[91.146vw] max-sm:grid-cols-1 max-sm:grid-rows-6">
+    <div className="grid w-full max-w-[920px] grid-cols-2 grid-rows-2 gap-[28px] justify-items-center max-lg:grid-cols-2 max-lg:grid-rows-3 max-lg:w-[700px] max-md:w-[91.146vw] max-sm:grid-cols-1 max-sm:grid-rows-4">
       {object.map((item, index) => (
         <div
           key={index}
