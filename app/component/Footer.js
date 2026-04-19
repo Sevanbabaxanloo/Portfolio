@@ -1,10 +1,9 @@
 import React from "react";
 import { BsEnvelope } from "react-icons/bs";
 
-const Github = "/linkedin.svg";
-const Linkedin = "/github.svg";
+const linkedin = "/linkedin.svg";
+const github = "/github.svg";
 const certificate = "/basic.pdf";
-const btn = "/btn.svg";
 const cv = "/sevan_babakhanloo_cv.pdf";
 
 const Footer = () => {
@@ -56,15 +55,14 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={Github} alt="Github" className="w-[24px]" />
+            <img src={github} alt="Github" className="w-[24px]" />
           </a>
-
           <a
             href="https://www.linkedin.com/in/sevan-babakhanloo-2094a728a/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={Linkedin} alt="Linkedin" className="w-[24px]" />
+            <img src={linkedin} alt="Linkedin" className="w-[24px]" />
           </a>
         </div>
       </div>
