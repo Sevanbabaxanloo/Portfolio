@@ -74,9 +74,7 @@ const Tools = () => {
           </div>
           <div className="w-[760px] text-center max-md:w-full">
             <p className="text-[18px] text-[#E8FFF7] font-[100] tracking-[0.36px] font-montserrat max-md:tracking-[0.32px] max-sm:text-[16px]">
-              Passionate about creating user-friendly and visually appealing
-              websites, I'm on the exciting journey of turning my coding skills
-              into impactful web experiences. Proficient in
+              My core tech stack — the tools I use daily to build fast, responsive, and visually polished web interfaces.
             </p>
           </div>
         </div>
