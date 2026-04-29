@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="flex items-center justify-center gap-[8px]">
           <BsEnvelope className="text-[#C5C5C5] text-[16px] mail-text-size" />
           <p className="text-[#C5C5C5] text-[14px] font-[600] font-Poppins tracking-[0.28px] mail-text-size">
-            sevanbabakhanloo@gmail.com
+            sevan_babaxanloo@yahoo.com
           </p>
         </div>
         <div className="w-full flex justify-between items-center max-md:w-[160px] max-md:mb-0 max-md:flex-col max-md:gap-[16px] max-md:w-[200px]">

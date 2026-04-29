@@ -79,7 +79,7 @@ const EduExp = () => {
               </div>
 
               <div className="flex flex-col gap-[18px]">
-                <p className="text-[#8491A0] text-[14px] font-[400] font-montserrat text-center max-md:text-[18px] max-sm:text-[16px] max-md:text-left">
+                <p className="text-[#8491A0] text-[14px] text-left font-[400] font-montserrat text-center max-md:text-[18px] max-sm:text-[16px] max-md:text-left">
                   {item.text}
                 </p>
 
