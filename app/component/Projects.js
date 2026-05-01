@@ -20,7 +20,7 @@ const Projects = () => {
       descriptions: "UI/UX designer portfolio showcasing creative work and services. Built with React & Tailwind CSS."
     },
     {
-      text: "web3-web.com",
+      text: "Web3-Web.com",
       img: "/web-3.jpg",
       link: "https://web-333.netlify.app/",
       githubLink: "https://github.com/Sevanbabaxanloo/Web-3",
