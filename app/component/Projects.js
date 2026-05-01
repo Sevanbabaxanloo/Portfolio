@@ -14,7 +14,7 @@ const Projects = () => {
     {
       text: "Portfolio-Web.com",
       img: "/Portfolio.jpg",
-      link: "https://startling-gingersnap-074e1f.netlify.app/",
+      link: "https://ui-ux-portfolioo.netlify.app/",
       githubLink: "https://github.com/Sevanbabaxanloo/Ui-Ux-Portfolio/tree/master",
       git: "Github",
       descriptions: "UI/UX designer portfolio showcasing creative work and services. Built with React & Tailwind CSS."
